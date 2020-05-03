@@ -1,0 +1,50 @@
+## -*- coding: utf-8 -*-
+<%namespace name="base" file="base_helper.tmpl" import="*"/>
+<%namespace name="header" file="base_header.tmpl" import="*"/>
+<%namespace name="footer" file="base_footer.tmpl" import="*"/>
+${set_locale(lang)}
+${base.html_headstart()}
+<%block name="extra_head">
+### Leave this block alone.
+</%block>
+${template_hooks['extra_head']()}
+</head>
+<body id="post-index" class="feature">
+<a href="#content" class="sr-only sr-only-focusable">${messages("Skip to main content")}</a>
+    ${header.html_header()}
+    <div class="w3-content" style="max-width:1400px">
+    	<div class="w3-row">
+    		<div class="w3-col l8 s12">
+			    <div id="main" role="main">
+			            <%block name="content"></%block>
+			    </div>
+			</div>
+		</div>
+			<div class="w3-col l4">
+  			<!-- About Card -->
+  				<div class="w3-card w3-margin w3-margin-top">
+  				<img src="./images/hamelin4.jpg" style="width:100%">
+    				<div class="w3-container w3-white">
+      					<h4><b>My Name</b></h4>
+      						<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. </p>
+    				</div>
+  				</div><hr>
+
+
+  					<div class="w3-card w3-margin w3-margin-top">
+  						<div class="w3-container w3-white">
+  							<p>Colocar Aquí otros elementos HTML</p><br>
+  						</div>
+  					</div>
+
+
+  			</div>
+
+	</div>
+    
+    ${footer.html_footer()}
+    ${body_end}
+    ${template_hooks['body_end']()}
+    ${base.late_load_js()}
+</body>
+</html>
