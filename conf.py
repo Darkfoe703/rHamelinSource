@@ -25,7 +25,7 @@ SITE_URL = "https://pepon20.github.io/RebelionHamelin/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://pepon20.github.io/RebelionHamelin/"
 BLOG_EMAIL = "rebelion.Hamelin@gmail.com"
-BLOG_DESCRIPTION = "\"Ratón de Liberación\""  # (translatable)
+BLOG_DESCRIPTION = "\"Roedor de Liberación\""  # (translatable)
 
 # Nikola is multilingual!
 #
